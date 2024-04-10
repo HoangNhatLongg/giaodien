@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Thiết bị - Ứng dụng Quản lý Tưới Tiêu Thông Minh & Máy Bay Phun Thuốc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .device-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .device-list li {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quản lý Thiết bị</h1>
+    </header>
+
+    <nav>
+        <a href="#">Bảng điều khiển</a>
+        <a href="#">Thiết bị</a>
+        <a href="#">Lịch trình</a>
+        <a href="#">Cài đặt</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>Danh sách Thiết bị</h2>
+            <ul class="device-list">
+                <li><strong>Tên Thiết bị:</strong> Hệ thống Tưới Tiêu 1</li>
+                <li><strong>Loại Thiết bị:</strong> Tưới Tiêu Thông Minh</li>
+                <li><strong>Trạng thái:</strong> Hoạt động</li>
+                <li><strong>Thao tác:</strong> <a href="#">Cập nhật</a> | <a href="#">Xóa</a></li>
+            </ul>
+            <ul class="device-list">
+                <li><strong>Tên Thiết bị:</strong> Máy Bay Phun Thuốc 1</li>
+                <li><strong>Loại Thiết bị:</strong> Máy Bay Không Người Lái</li>
+                <li><strong>Trạng thái:</strong> Tạm dừng</li>
+                <li><strong>Thao tác:</strong> <a href="#">Cập nhật</a> | <a href="#">Xóa</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Thêm Thiết bị Mới</h2>
+            <form>
+                <label for="device-name">Tên Thiết bị:</label>
+                <input type="text" id="device-name" name="device-name" required><br><br>
+                <label for="device-type">Loại Thiết bị:</label>
+                <select id="device-type" name="device-type">
+                    <option value="smart-irrigation">Tưới Tiêu Thông Minh</option>
+                    <option value="drone">Máy Bay Không Người Lái</option>
+                </select><br><br>
+                <button type="submit" class="button">Thêm Thiết bị</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo - Ứng dụng Quản lý Tưới Tiêu Thông Minh & Máy Bay Phun Thuốc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .report {
+            margin-top: 20px;
+        }
+
+        .report h3 {
+            margin-bottom: 10px;
+        }
+
+        .report p {
+            margin: 0;
+        }
+
+        .chart {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Báo Cáo</h1>
+    </header>
+
+    <nav>
+        <a href="#">Bảng điều khiển</a>
+        <a href="#">Thiết bị</a>
+        <a href="#">Lịch trình</a>
+        <a href="#">Cài đặt</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>Báo Cáo Sử Dụng Nước</h2>
+            <div class="report">
+                <h3>Tháng 3/2024</h3>
+                <p>Tổng lượng nước đã sử dụng: 5000 lít</p>
+                <p>Số lần tưới tiêu: 30</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Báo Cáo Sử Dụng Thuốc</h2>
+            <div class="report">
+                <h3>Tháng 3/2024</h3>
+                <p>Tổng lượng thuốc đã sử dụng: 2 lít</p>
+                <p>Số lần phun thuốc: 5</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Biểu Đồ Hiệu Suất</h2>
+            <canvas class="chart" id="performance-chart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Đoạn mã JavaScript để vẽ biểu đồ sẽ được thêm vào đây
+    </script>
+</body>
+</html>
